@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>Buddhabrot JS</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style>
+      #buddhaCanvas { border:1px solid #333; background-color: black; }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="buddhabrot.js"></script>
+
+  </head>
+
+  <body>
+    
+  <div class="container">
+
+      <div class="row">
+        <div class="span10"><canvas id="buddhaCanvas" width = "600" height = "600"></canvas></div>
+        <div class="span2">
+          
+            <fieldset>
+
+              <legend>Settings</legend>
+              
+              <div class="input-append">
+                <label>Width</label>
+                <input type="number" placeholder="1000" id="stageWidth" class="appendedInput span1" value="600"><span class="add-on">px</span>              
+              </div>
+
+              <div class="input-append">
+                <label>Height</label>
+                <input type="number" placeholder="1000" id="stageHeight" class="appendedInput span1" value="600"><span class="add-on">px</span>              
+              </div>
+
+              <div class="input-append">
+                <label>RGB Limits</label>
+                <input type="number" min="0" placeholder="50" id="rLimit" class="appendedInput span1" value="50">
+                <input type="number" min="0" placeholder="200" id="gLimit" class="appendedInput span1" value="200">
+                <input type="number" min="0" placeholder="500" id="bLimit" class="appendedInput span1" value="500">
+              </div>
+  
+              <div class="input-append">
+                <label>Max Samples</label>
+                <input type="number" min="0" placeholder="1000000" id="sampleSize" class="appendedInput span2" value="1000000">             
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-success" id="generateButton" data-loading-text="Sampling...">Generate</button>&nbsp;&nbsp;<small id="sampleCounter" class="small"> <span>0</span>/10</small>
+              </div>
+
+            </fieldset>
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
