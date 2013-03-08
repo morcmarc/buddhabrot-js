@@ -35,3 +35,5 @@ Also worth noting the same domain policy applied by browser when resolving the w
 - [Original blog post by Melinda Green](http://www.superliminal.com/fractals/bbrot/bbrot.htm)
 - [Metropolis-Hastings Algorithm](http://www.steckles.com/buddha/)
 - [A Java Implementation](http://www.moleculardensity.net/)
+
+*Copyright (C) 2013 Marcell Jusztin - MIT License*
